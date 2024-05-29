@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call of Duty Mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <header>
+        <nav class="navbar">
+            <img src="CODLOGO.jpg" alt="Call of Duty Logo" class="logo">
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navbar-menu">
+                <li><a href="#home">HOME</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">SOCIAL</a>
+                    <div class="dropdown-content">
+                        <a href="https://x.com/PlayCODMobile" target="_blank">X</a>
+                        <a href="https://www.instagram.com/callofdutymobile" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/c/callofdutymobile" target="_blank">YouTube</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="characters.html">CHARACTERS</a></li>
+                <li><a href="worldchampionships.html">WORLD CHAMPIONSHIPS</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+
+    
+    <!-- Background Video -->
+    <section id="home">
+        <video autoplay muted loop id="bgVideo">
+            <source src="Call of Duty®_ Mobile - Official Launch Trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+            <h1 class="welcome-text">Welcome to Call of Duty Mobile</h1>
+            <p class="thrill-text">Experience the thrill of the game on your mobile device.</p>
+            <button onclick="javascript:location.href='about.html'">Learn More</button>
+        </div>
+    </section>
+
+
+    
+    <section id="features">
+        <h2>FEATURES</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h3>Multiplayer</h3>
+                <p>Engage in fast-paced multiplayer battles with players from around the world.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Battle Royale</h3>
+                <p>Drop in, gear up, and survive against up to 100 players in the Battle Royale mode.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Weapons</h3>
+                <p>Customize your loadout with a variety of weapons and equipment.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- New Photo Section -->
+    <section id="feature-photo">
+        <div class="photo-container">
+            <img src="codmobile.jpg" alt="Feature Photo" class="feature-photo">
+        </div>
+        <div class="download-container">
+            <H2>DOWNLOAD NOW</H2>
+            <button class="appstore-btn">Download it on App Store</button>
+            <button class="playstore-btn">Get it on Playstore</button>
+            <img src="COD.jpg" alt="Download Image" class="download-image">
+        </div>
+    </section>
+    
+
+    <section id="screenshots">
+        <h2>SCREENSHOTS</h2>
+        <div class="screenshot">
+            <img src="screenshot1.jpg" alt="Screenshot 1">
+            <img src="screenshot2.jpg" alt="Screenshot 2">
+            <img src="screenshot3.jpg" alt="Screenshot 3">
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>CONTACT US</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+
+
+    
+    <footer>
+        <p>&copy; 2024 Call of Duty Mobile. All rights reserved.</p>
+    </footer>
+    
+
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

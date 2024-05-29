@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODM Gallery</title>
+    <link rel="stylesheet" href="style.css">
+
+
+<style>
+    /* style.css */
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    background: #000;
+}
+
+ /* Navbar styles */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+.navbar a, .dropbtn {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+      display: block;
+}
+
+
+
+h1, h2 {
+    color: #ffd700;
+    text-align: center;
+    font-size:xx-large;
+}
+
+p {
+    color: #f4f4f4;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#about-codm {
+    padding: 50px 20px;
+    background: #1e1e1e;
+    border-bottom: 2px solid #ffd700;
+}
+
+#gallery {
+    padding: 50px 20px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e1e;
+    color: #ffd700;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="CODLOGO.jpg" alt="Call of Duty Logo" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">SOCIAL</a>
+                    <div class="dropdown-content">
+                        <a href="https://x.com/PlayCODMobile" target="_blank">X</a>
+                        <a href="https://www.instagram.com/callofdutymobile" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/c/callofdutymobile" target="_blank">YouTube</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="characters.html">CHARACTERS</a></li>
+                <li><a href="worldchampionships.html">WORLD CHAMPIONSHIPS</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+
+    <section id="about-codm">
+        <div class="container">
+            <h1> Call of Duty Mobile</h1>
+            <p>Call of Duty: Mobile is a 2019 first-person shooter video game developed by TiMi Studio Group and published by Activision for Android and iOS. It was one of the largest mobile game launches in history, generating over US$480 million with 270 million downloads within a year. Experience the thrill of the iconic Call of Duty franchise, now on your mobile device.</p>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="image1.jpeg" alt="Game Screenshot 1">
+                <img src="image2.jpeg" alt="Game Screenshot 2">
+                <img src="image3.jpeg" alt="Game Screenshot 3">
+                <img src="image4.jpeg" alt="Game Screenshot 4">
+                <img src="image5.jpeg" alt="Game Screenshot 5">
+                <img src="image6.jpeg" alt="Game Screenshot 6">
+                <img src="image7.jpeg" alt="Game Screenshot 7">
+                <img src="image8.jpeg" alt="Game Screenshot 8">
+                <img src="image9.jpeg" alt="Game Screenshot 9">
+                <img src="image10.jpg" alt="Game Screenshot 10">
+                <img src="image11.jpg" alt="Game Screenshot 11">
+                <img src="image12.jpg" alt="Game Screenshot 12">
+                <img src="image13.jpg" alt="Game Screenshot 13">
+                <img src="image14.jpg" alt="Game Screenshot 14">
+                <img src="image15.jpg" alt="Game Screenshot 15">
+                <img src="image16.jpg" alt="Game Screenshot 16">
+                <img src="image17.jpg" alt="Game Screenshot 17">
+                <img src="image18.jpg" alt="Game Screenshot 18">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Call of Duty Mobile. All rights reserved.</p>
+    </footer>
+    
+    
+
+</body>
+</html>

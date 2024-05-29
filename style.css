@@ -1,0 +1,355 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+.navbar a, .dropbtn {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Menu toggle button styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+
+/* Home section styles */
+#home {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 60px; /* Adjust for the fixed navbar */
+}
+
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.7) contrast(1.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+/* Custom styles for welcome and thrill texts */
+.welcome-text {
+    font-size: 4em;
+    font-weight: bold;
+    color: #e7c60b;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.thrill-text {
+    font-size: 1.5em;
+    color: #ffeeee;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+}
+
+.overlay button {
+    background: #ffd700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.overlay button:hover {
+    background: #ffbf00;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: #1e1e1e;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature-item h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+/* New photo and download section styles */
+#feature-photo-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.photo-container {
+    flex: 1;
+    max-width: 100%;
+}
+
+.feature-photo {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.download-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 20px;
+}
+
+.download-container button {
+    margin: 10px 0;
+    width: 200px;
+}
+
+.download-btn, .appstore-btn, .playstore-btn {
+    background: #ffd700;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;
+    width: 100%;
+}
+
+.download-btn:hover, .appstore-btn:hover, .playstore-btn:hover {
+    background: #d5a208;
+}
+
+.screenshot {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.screenshot img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form input, form textarea {
+    background: #2e2e2e;
+    color: #f4f4f4;
+}
+
+form button {
+    background: #ffd700;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+form button:hover {
+    background: #ffbf00;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #ffd700;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .navbar .menu-toggle {
+        display: flex;
+    }
+
+    .feature-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        width: 80%;
+    }
+
+    .screenshot img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-text {
+        font-size: 2.5em;
+    }
+
+    .thrill-text {
+        font-size: 1em;
+    }
+
+    .overlay button {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+}

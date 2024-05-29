@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    
+<style>
+
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+/* Navbar styles */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #ffd700;
+    color: #000;
+}
+
+.navbar a, .dropbtn {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: #ffd700;
+            margin-bottom: 50px;
+        }
+        
+        .character {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .character:hover {
+            transform: scale(1.05);
+        }
+        
+        .character img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .character:hover img {
+            transform: scale(1.1);
+        }
+        
+        .character-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .character:hover .character-content {
+            opacity: 1;
+        }
+        
+        .character h3 {
+            margin-top: 10px;
+            color: #ffd700;
+        }
+        
+        .character p {
+            color: #fff;
+            line-height: 1.5;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #ffd700;
+        }
+    
+    </style>
+
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="CODLOGO.jpg" alt="Call of Duty Logo" class="logo">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">SOCIAL</a>
+                    <div class="dropdown-content">
+                        <a href="https://x.com/PlayCODMobile" target="_blank">X</a>
+                        <a href="https://www.instagram.com/callofdutymobile" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/c/callofdutymobile" target="_blank">YouTube</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="characters.html">CHARACTERS</a></li>
+                <li><a href="worldchampionships.html">WORLD CHAMPIONSHIPS</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <section id="characters">
+        <div class="container">
+            <h2>Characters</h2>
+            <div class="characters-images">
+
+                <div class="character">
+                    <img src="imageA.jpg" alt="Character Image 1">
+                    <h3>Simon "Ghost" Riley</h3>
+                    <p>Lieutenant Simon "Ghost" Riley is a British special forces operator, and a prominent member of Task Force 141, known for his iconic skull-patterned balaclava, headset, and dark red sunglasses.
+
+                        Ghost appears as a main character in Call of Duty: Modern Warfare 2, Modern Warfare 2: Ghost, Call of Duty: Online, Find Makarov: Operation Kingfish, Call of Duty: Heroes, and Call of Duty: Modern Warfare 2 Campaign Remastered. He also appears as a customization option in Call of Duty: Ghosts and Call of Duty: Infinite Warfare.</p>
+                </div>
+
+                <div class="character">
+                    <img src="imageB.jpg" alt="Character Image 2">
+                    <h3>John Price</h3>
+                    <p>Captain John Price, callsign Bravo Six, is a member of British SAS and a main character in the Modern Warfare franchise. He is also featured in Call of Duty Online and Call of Duty: Heroes, and Call of Duty: Mobile.
+
+                        Price is also available in Call of Duty: Ghosts as part of the Cpt. Price Legend Pack allowing the players to customize their soldier to look like Price. Price became available in Call of Duty: Black Ops 4 on July 11th, 2019 on PlayStation 4 and on July 18th on Xbox One and PC as a playable character in Blackout for players who preordered Call of Duty: Modern Warfare.</p>
+                </div>
+
+                <div class="character">
+                    <img src="imageC.jpg" alt="Character Image 2">
+                    <h3>John "Soap" MacTavish</h3>
+                    <p>Captain John "Soap" MacTavish was the deuteragonist of the Modern Warfare franchise, and also appears in Call of Duty: Heroes, as well as Call of Duty Online. He is the main playable character in Call of Duty 4: Modern Warfare and Call of Duty: Modern Warfare Remastered as a sergeant and special forces soldier, serving as the 22nd S.A.S. Regiment's sniper and demolitions expert, and Call of Duty: Modern Warfare 2 and Call of Duty: Modern Warfare 3 as a captain and the Field Commander of Task Force 141,[3] along with Captain John Price with Sgt. Gary "Roach" Sanderson and Lt. Simon "Ghost" Riley under his command.</p>
+
+                    <div class="character">
+                        <img src="imageD.jpg" alt="Character Image 2">
+                        <h3>Vladimir Makarov</h3>
+                        <p>Vladimir Makarov (Russian: Владимир Макаров, and also referenced as Vladimir R. Makarov in Call of Duty: Modern Warfare 2 and Vladimir A. Makarov in Modern Warfare 3) is the main antagonist of the Modern Warfare franchise known for his ruthless tactics. He's the leader of an Ultranationalist terrorist cell and Imran Zakhaev's protégé.[3] Makarov serves as the secondary antagonist of Call of Duty: Modern Warfare 2, and the main antagonist of Call of Duty: Modern Warfare 3. As well, he appeared as a customization option in Call of Duty: Ghosts. He was the grand mastermind behind World War 3 and the cause of the entire series' events, always pulling the strings from behind the lines as the puppet master.</p>
+
+                     <div class="character">
+                         <img src="imageE.jpg" alt="Character Image 2">
+                        <h3>Shepherd</h3>
+                         <p>DLieutenant General Shepherd was an officer in the United States Army in Call of Duty: Modern Warfare 2 who commanded the United States Marine Corps, U.S. Army Rangers, Task Force 141 and his own elite army that was known as Shadow Company. He started out as a supporting character for the player in Modern Warfare 2 only to reveal himself as the main antagonist of the game and the grand architect of World War III. He wielded a .44 Magnum as his signature weapon, though the player could only acquire it in the level, "Museum".</p>
+
+                         <div class="character">
+                            <img src="imageF.jpg" alt="Character Image 2">
+                            <h3>Russell Adler</h3>
+                            <p>"Trained as a Green Beret, Adler entered the CIA's Special Activities Division in 1959, after which he only appears sporadically in the Agency's records. While an undisputed leader, he is an enigma to all that serve with him."
+                                — In-game biography
+                                
+                                Special Officer Russell Adler is the deuteragonist to antagonist featured in Call of Duty: Black Ops Cold War. He is a CIA agent charged with stopping the mysterious Soviet agent codenamed Perseus. Adler is described as "America's monster" with a "dark charisma".[1] He later serves as the protagonist of the post-launch seasonal narrtive for Black Ops Cold War, going up against Vikhor "Stitch" Kuzmin.</p>     
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Call of Duty Mobile. All rights reserved.</p>
+    </footer>
+    
+   
+</body>
+</html>
